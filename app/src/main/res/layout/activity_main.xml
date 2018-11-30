@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#5a5a74">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:onClick="startWordsActivity"
+            android:id="@+id/numbersFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/layout"
+            android:elevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.example.mm.miwokapp.fonts.TextViewText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="@string/category_numbers" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:onClick="startWordsActivity"
+            android:id="@+id/familyFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/layout"
+            android:elevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numbersFrameLayout">
+
+            <com.example.mm.miwokapp.fonts.TextViewText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="@string/category_family" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:onClick="startWordsActivity"
+            android:id="@+id/colorFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/layout"
+            android:elevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/familyFrameLayout">
+
+            <com.example.mm.miwokapp.fonts.TextViewText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:text="@string/category_colors" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/phrasesFrameLayout"
+            android:onClick="startWordsActivity"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/layout"
+            android:elevation="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorFrameLayout"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.example.mm.miwokapp.fonts.TextViewText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="@string/category_phrases" />
+
+        </FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>
